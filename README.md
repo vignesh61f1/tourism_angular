@@ -2,6 +2,28 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
 
+#📦 Setup Instructions
+Clone the repository
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Run the development server
+
+bash
+Copy
+Edit
+npm start
+Open your browser at http://localhost:4200
+
 ## Development server
 
 To start a local development server, run:
