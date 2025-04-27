@@ -1,0 +1,64 @@
+<main class="booking-container">
+    <section class="booking">
+        <h1>Book Your Trip</h1>
+        <p>Please fill out the form below to secure your booking.</p>
+        <form action="#" method="POST">
+            <fieldset>
+                <div class="form-group">
+                    <label for="firstname">First Name: <span class="required">*</span></label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter first name" required />
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name: <span class="required">*</span></label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter last name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter email" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required />
+                </div>
+                <div class="form-group">
+                    <label for="check-in-date">Check-in Date: <span class="required">*</span></label>
+                    <input type="date" id="check-in-date" name="check-in-date" required />
+                </div>
+                <div class="form-group">
+                    <label for="check-out-date">Check-out Date: <span class="required">*</span></label>
+                    <input type="date" id="check-out-date" name="check-out-date" required />
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group">
+                    <label for="accommodation">Accommodation Type: <span class="required">*</span></label>
+                    <select id="accommodation" name="accommodation" required>
+                        <option value="">Select One</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="self-catered">Self-Catered</option>
+                        <option value="hostel">Hostel</option>
+                        <option value="guesthouse">Guesthouse</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="rooms">Number of Rooms: <span class="required">*</span></label>
+                    <input type="number" id="rooms" name="rooms" min="1" max="10" required />
+                </div>
+                <div class="form-group">
+                    <label>Room Type: <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="room-type" value="single" required /> Single Room</label>
+                        <label><input type="radio" name="room-type" value="double" /> Double Room</label>
+                        <label><input type="radio" name="room-type" value="triple" /> Triple Room</label>
+                        <label><input type="radio" name="room-type" value="quad" /> Quad Room</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="additional">Additional Requests:</label>
+                    <textarea id="additional" name="additional" rows="4" placeholder="Enter your additional requests/services needed"></textarea>
+                </div>
+            </fieldset>
+            <button type="submit" class="submit-btn" onclick="alert('Booked successfully! \nEnjoy your journey')">Submit Booking</button>
+        </form>
+    </section>
+</main>
